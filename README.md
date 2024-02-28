@@ -29,14 +29,14 @@ Discovering and contributing to non-code open-source issues presents several cha
 **Enhance User Profiles for Skill Assessment:** Enable potential recruiters and job seekers to evaluate platform users' skill levels by tracking their contribution activity.
 
 
-# Who can use Nocos.io?
+# Who can use Nocos.cc?
 
 1. New non-coding open-source contributors looking to get started with open-source,
 2. Experienced non-coding contributors,
 3. Open-source project maintainers,
 4. Recruiters, etc.
 
-# How can I contribute to Nocos.io?
+# How can I contribute to Nocos.cc?
 This project is still in pilot phase and will commence call for contributors soon.
 
 Don't forget to give the project a star! Thanks again!

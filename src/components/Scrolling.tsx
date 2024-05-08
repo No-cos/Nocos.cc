@@ -1,5 +1,5 @@
 import React from "react";
-import { RiCompassesLine } from "react-icons/ri";
+import { RiAspectRatioFill, RiCompass2Line } from "react-icons/ri";
 import Marquee from "react-fast-marquee";
 
 export const ScrollingLeft = ({ texts }: any) => {
@@ -10,7 +10,7 @@ export const ScrollingLeft = ({ texts }: any) => {
           key={index}
           className="scroll-text mr-8 border text-gray-400 border-gray-600 text-sm px-8 py-1 rounded-full flex items-center ">
           <div className="pr-2">
-            <RiCompassesLine />
+            <RiAspectRatioFill />
           </div>
           {text}
         </span>
@@ -27,11 +27,13 @@ export const ScrollingRight = ({ texts }: any) => {
           key={index}
           className="scroll-text mr-8 border text-gray-400 border-gray-600 text-sm px-8 py-1 rounded-full flex items-center ">
           <div className="pr-2">
-            <RiCompassesLine />
+            <RiAspectRatioFill />
           </div>
           {text}
         </span>
+       
       ))}
+      
     </Marquee>
   );
 };

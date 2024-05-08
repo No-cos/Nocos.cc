@@ -1,19 +1,26 @@
-import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DocHeader from "@/components/DocHeader";
+import { Inter } from "next/font/google";
 
-const Layout = ({ children }) => {
-    return (
-      <div>
-        <head>
-          <title>My Next.js App</title>
-          
-        </head>
-        <Header></Header>
-        <main>{children}</main>
-       <Footer></Footer>
-      </div>
-    );
-  };
-  
-  export default Layout;
+
+
+const inter = Inter({ subsets: ["latin"] });
+
+
+
+export default function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <>
+      <main>
+        <DocHeader />
+        {children}
+        <Footer />
+      </main>
+    </>
+  )
+}

@@ -1,4 +1,11 @@
+import "react-icons/ri"
+
 export const navs = [
+  {
+    id: 0,
+    title: "Tasks",
+    link: "/tasks",
+  },
   {
     id: 1,
     title: "Resources",
@@ -16,7 +23,9 @@ export const navs = [
   },
 ];
 
+
 export const topics = [
+  
   "Code Review",
   "Product Marketing",
   "PR Review",
@@ -24,6 +33,7 @@ export const topics = [
   "Community Manager",
   "Documentation",
   "Marketing",
+  
 ];
 
 export const projects = [

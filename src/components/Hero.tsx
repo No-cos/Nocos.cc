@@ -20,13 +20,13 @@ const Hero = () => {
               without technical hassle.
             </p>
           </div>
-          <div className="btn mt-8 flex items-center justify-center mx-auto lg:w-8/12 w-11/12">
+          <div className="btn mt-[4rem] flex items-center justify-center mx-auto lg:w-8/12 w-11/12">
             <div className="flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-4 w-full lg:w-auto">
-              <Button className="bg-[#7622FE] hover:bg-[#7622FE] rounded-xl px-6 h-[56px] w-full lg:w-[194px] text-white">
-                Get Started <IoArrowForward className="text-xl ml-2" />
+              <Button >
+                Find Tasks 
               </Button>
-              <Button className="bg-[#EFEFEF] hover:bg-[#EFEFEF] rounded-xl px-6 h-[56px] w-full lg:w-[194px] text-black">
-                Explore <MdOutlineExplore className="text-xl ml-2" />
+              <Button variant={"secondary"} >
+                Post Tasks 
               </Button>
             </div>
           </div>

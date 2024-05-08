@@ -18,13 +18,13 @@ const Header = () => {
   return (
     <header className=" w-full z-10 fixed top-0 py-8 flex items-center justify-center">
       <nav className="lg:w-5/12 w-10/12 py-6 px-8 h-[60px] rounded-2xl bg-[#181A1DB2] flex items-center justify-between">
-        <Image
+       <a href="">  <Image
           src={nocoslogo}
           alt="Nocos logo"
           width="68"
           height="29"
           layout="fixed"
-        />
+        /> </a>
 
         <div className="nav-links hidden space-x-8 lg:flex items-center">
           {navs?.map((nav) => (

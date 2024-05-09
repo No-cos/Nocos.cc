@@ -93,6 +93,16 @@ h3 {
     background-position: center;
     background-size: cover;
 }
+.footer-bg {
+  background-image: url(../../public/nocos-bg-2.svg) ;
+    background-position: top;
+    background-size:cover;
+background-blend-mode:difference;
+background-repeat: no-repeat;
+    
+    
+
+}
 .dark-bg {
   background-color:  hsla(225, 10%, 8%, 1);
    

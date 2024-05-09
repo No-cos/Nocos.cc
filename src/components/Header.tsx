@@ -27,7 +27,7 @@ const Header = () => {
           layout="fixed"
         /> </a>
 
-        <div className="nav-links hidden space-x-8 lg:flex items-center">
+        <div className="nav-links hidden lg:space-x-8 space-x-4 lg:flex items-center justify-end">
           {navs?.map((nav) => (
             <Link
               key={nav?.id}
@@ -40,11 +40,11 @@ const Header = () => {
               {nav?.title}
             </Link>
           ))}
-          <div className="pl-8">
+        
             <Button variant={"ghost"} size={"sm"}>
               Sign in <IoArrowForward className="h-6 w-6 ml-2" />
             </Button>
-          </div>
+        
         </div>
 
         <IoIosMenu

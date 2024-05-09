@@ -22,7 +22,7 @@ const buttonVariants = cva(
         ghost: "bg-slate-300 bg-opacity-20 text-white hover:bg-opacity-30 ",
 
         link: "text-primary underline-offset-4 hover:underline",
-        formBtn: "bg-nocosPurple-500 hover:bg-nocosPurple-600  px-10  lg:w-[120px] ronded-lg  text-lg  text-white",
+        formBtn: "bg-nocosPurple-500 hover:bg-nocosPurple-600  px-10   lg:w-[120px] rounded-lg  md:text-lg text-base text-white",
       },
       size: {
         default: "h-[56px] px-4 py-2 ",

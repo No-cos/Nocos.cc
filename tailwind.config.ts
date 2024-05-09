@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +19,39 @@ const config = {
     },
     extend: {
       colors: {
+        nocosPurple: {
+          900: "#290C59",
+          800: "#350F72",
+          700: "#471498",
+          600: "#591ABF",
+          500: "#5E1BCB",
+          400: "#6A1FE5",
+          300: "#7622FE",
+          200: "#D5BAFF",
+          100: "#EADEFF",
+          50: "#F1E9FF"
+        },
+
+        nocosLemon: {
+          900: "#494D01",
+          800: "#5E6301",
+          700: "#7D8302",
+          600: "#9CA402",
+          500: "#A6AF02",
+          400: "#BBC503",
+          300: "#D0DB03",
+          200: "#F0F4B1",
+          100: "#F8FAD9",
+          50: "#FAFBE6"
+        },
+
+        modalGrey: {
+          50: "#1C1F22",
+          100: "#24272B",
+          200: "#3B3B3B",
+        },
+
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

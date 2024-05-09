@@ -15,7 +15,7 @@ const ProjectFilters = () => {
   return (
     <section className="flex items-center justify-between lg:flex-row flex-col pb-8">
       <div className="">
-        <p className="text-white text-lg mb-2 font-medium">Popular Tags:</p>
+        <h3 className="text-white mb-2">Popular Tags:</h3>
         <div className="tags lg:flex lg:items-center grid grid-cols-3 gap-x-3 gap-y-3 mb-6 lg:space-x-2">
           {tags.map((item, index) => (
             <p

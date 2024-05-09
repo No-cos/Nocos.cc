@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const Contributors = () => {
   return (
-    <section className="hero-bg bg-gray-800 py-20">
+    <section className="dark-bg  py-20">
       <MaxWidthWrapper className="lg:w-11/12 w-12/12">
         <div className="text-center">
           <h1 className="font-bold text-2xl text-white">Top Contributors</h1>
@@ -22,7 +22,7 @@ const Contributors = () => {
           </p>
         </div>
 
-        <div className="contributors lg:w-8/12 w-10/12 mx-auto grid grid-cols-5 gap-2 mt-20">
+        <div className="contributors  w-10/12 mx-auto grid grid-cols-5 gap-2 mt-20">
           <div className="row space-y-3">
             <Image
               src={pic1}
@@ -144,7 +144,7 @@ const Contributors = () => {
           </div>
         </div>
 
-        <div className="stats lg:w-8/12 w-10/12 mx-auto flex items-center justify-center px-10 lg:py-20 py-10 lg:mt-40 mt-20 border border-[#3E3E3E] rounded-lg bg-[#16181B]">
+        {/* <div className="stats lg:w-8/12 w-10/12 mx-auto flex items-center justify-center px-10 lg:py-20 py-10 lg:mt-40 mt-20 border border-[#3E3E3E] rounded-lg bg-[#16181B]">
           <div className="lg:flex items-center justify-around grid grid-cols-2 gap-8 w-full">
             <div className="card text-white">
               <h1 className="font-bold text-4xl">2M+</h1>
@@ -163,7 +163,7 @@ const Contributors = () => {
               <p className="font-semibold text-xs">Compaines</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </MaxWidthWrapper>
     </section>
   );

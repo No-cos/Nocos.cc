@@ -10,7 +10,6 @@ import { Button } from "./ui/button";
 import { IoIosMenu } from "react-icons/io";
 import { Dialog, Popover } from "@headlessui/react";
 import { IoMdClose } from "react-icons/io";
-import { Ghost } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -19,7 +18,7 @@ const Header = () => {
   return (
     <header className=" w-full z-10 fixed top-0 py-8 flex items-center justify-center">
       <nav className="lg:w-5/12 w-10/12 py-6 px-8 h-[60px] rounded-2xl bg-[#181A1DB2] flex items-center justify-between">
-       <a href="">  <Image
+       <a href="./ ">  <Image
           src={nocoslogo}
           alt="Nocos logo"
           width="68"
@@ -27,24 +26,24 @@ const Header = () => {
           layout="fixed"
         /> </a>
 
-        <div className="nav-links hidden lg:space-x-8 space-x-4 lg:flex items-center justify-end">
+        <div className="nav-links hidden space-x-8 lg:flex items-center">
           {navs?.map((nav) => (
             <Link
               key={nav?.id}
               href={nav?.link}
               className={`${
                 pathname === nav?.link
-                  ? "text-nocosLemon-200 text-base "
+                  ? "text-red-600 text-base"
                   : "text-white text-base"
               }`}>
               {nav?.title}
             </Link>
           ))}
-        
-            <Button variant={"ghost"} size={"sm"}>
+          <div className="pl-8">
+            <Button className="bg-[#26282C] text-white py-3 px-3 text-md rounded-xl">
               Sign in <IoArrowForward className="h-6 w-6 ml-2" />
             </Button>
-        
+          </div>
         </div>
 
         <IoIosMenu
@@ -85,17 +84,17 @@ const Header = () => {
                       href={nav?.link}
                       className={`${
                         pathname === nav?.link
-                          ? "text-nocosLemon-200 text-xl font-semibold"
+                          ? "text-red-600 text-xl font-semibold"
                           : "text-white text-xl font-semibold"
                       }`}>
                       {nav?.title}
                     </Link>
                   ))}
-                  <div className="">
-                    <Button variant={"ghost"} size={"sm"}>
-                      Sign in <IoArrowForward className=" w-6 ml-2" />
+                  {/* <div className="">
+                    <Button className="bg-white text-gray-600 py-6 px-3 text-lg w-6/12 rounded-xl">
+                      Sign in <IoArrowForward className="h-6 w-6 ml-2" />
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

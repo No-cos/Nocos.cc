@@ -1,4 +1,11 @@
+import "react-icons/ri"
+
 export const navs = [
+  {
+    id: 0,
+    title: "Tasks",
+    link: "/tasks",
+  },
   {
     id: 1,
     title: "Resources",
@@ -6,17 +13,48 @@ export const navs = [
   },
   {
     id: 2,
-    title: "Blog",
-    link: "/blog",
+    title: "Events",
+    link: "/events",
   },
   {
     id: 3,
-    title: "UserType",
-    link: "/user-type",
+    title: "Blog",
+    link: "/blog",
   },
 ];
 
+export const features = [
+{
+  id: 1,
+  title: "Layout",
+  link: "",
+},
+{
+  id: 2,
+  title: "Acadamy",
+  link: "",
+},
+{
+  id: 3,
+  title: "Customers",
+  link: "",
+},
+{
+  id: 4,
+  title: "Enterprise",
+  link: "",
+},
+{
+  id: 5,
+  title: "Developers",
+  link: "",
+}
+
+  
+]
+
 export const topics = [
+  
   "Code Review",
   "Product Marketing",
   "PR Review",
@@ -24,6 +62,7 @@ export const topics = [
   "Community Manager",
   "Documentation",
   "Marketing",
+  
 ];
 
 export const projects = [

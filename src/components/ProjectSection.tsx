@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 
 const ProjectSection = () => {
   return (
-    <section className="hero-bg bg-gray-800 py-20">
+    <section className="bg-[#0E0F12] py-20">
       <MaxWidthWrapper className='w-11/12'>
         <ProjectFilters />
         <section className='grid lg:grid-cols-3 gap-2 mt-10'>

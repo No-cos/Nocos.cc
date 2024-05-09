@@ -99,16 +99,11 @@ h3 {
     background-size:cover;
 background-blend-mode:difference;
 background-repeat: no-repeat;
-    
-    
-
 }
 .dark-bg {
   background-color:  hsla(225, 10%, 8%, 1);
    
 }
-
-
 
 .bg-left {
   background: linear-gradient(to right, #121316 0%, rgba(0, 0, 0, 0) 50%);

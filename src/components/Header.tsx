@@ -17,7 +17,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className=" w-full z-10 fixed top-0 py-8 flex items-center justify-center">
+    <header className=" w-full z-20 fixed top-0 py-8 flex items-center justify-center">
       <nav className="lg:w-5/12 w-10/12 py-6 px-8 h-[60px] rounded-2xl bg-[#181A1DB2] flex items-center justify-between">
        <a href="">  <Image
           src={nocoslogo}

@@ -10,15 +10,16 @@ import { Button } from "./ui/button";
 import { IoIosMenu } from "react-icons/io";
 import { Dialog, Popover } from "@headlessui/react";
 import { IoMdClose } from "react-icons/io";
-
+import { MdOutlineManageSearch } from "react-icons/md";
+import { IoFilter } from "react-icons/io5";
 const Header = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className=" w-full z-10 fixed top-0 py-8 flex items-center justify-center">
-      <nav className="lg:w-5/12 w-10/12 py-6 px-8 h-[60px] rounded-2xl bg-[#181A1DB2] flex items-center justify-between">
-       <a href="./ ">  <Image
+    <header className="  outline z-10 fixed m-auto top-5 py-8 flex items-center justify-between h-fit w-screen ">
+      <nav className=" py-6 px-8 h-[60px] rounded-2xl bg-[#181A1DB2] flex items-center justify-between">
+        <a href="./ ">  <Image
           src={nocoslogo}
           alt="Nocos logo"
           width="68"
@@ -26,24 +27,20 @@ const Header = () => {
           layout="fixed"
         /> </a>
 
-        <div className="nav-links hidden space-x-8 lg:flex items-center">
-          {navs?.map((nav) => (
-            <Link
-              key={nav?.id}
-              href={nav?.link}
-              className={`${
-                pathname === nav?.link
-                  ? "text-red-600 text-base"
-                  : "text-white text-base"
-              }`}>
-              {nav?.title}
-            </Link>
-          ))}
-          <div className="pl-8">
-            <Button className="bg-[#26282C] text-white py-3 px-3 text-md rounded-xl">
-              Sign in <IoArrowForward className="h-6 w-6 ml-2" />
-            </Button>
+        <div className="search flex items-center space-x-4">
+          <div className="input-wrapper relative flex items-center border border-[#3E3E3E] py-0 px-1 rounded-lg bg-[#16181B]">
+            <input
+              type="search"
+              placeholder="Search for Projects"
+              className=" bg-transparent p-3 outline-none text-white placeholder:text-[#4E4E4E]"
+            />
+            <button className="bg-white px-4 py-2 outline-none rounded-lg ">
+              <MdOutlineManageSearch className="h-6 w-6" />
+            </button>
           </div>
+          <Button className="bg-[#7622FE] text-white lg:px-4 py-2 outline-none rounded-lg flex lg:space-x-2 ">
+            <p className="lg:flex hidden">Filter</p> <IoFilter className="h-6 w-6" />
+          </Button>
         </div>
 
         <IoIosMenu
@@ -82,11 +79,10 @@ const Header = () => {
                     <Link
                       key={nav?.id}
                       href={nav?.link}
-                      className={`${
-                        pathname === nav?.link
+                      className={`${pathname === nav?.link
                           ? "text-red-600 text-xl font-semibold"
                           : "text-white text-xl font-semibold"
-                      }`}>
+                        }`}>
                       {nav?.title}
                     </Link>
                   ))}

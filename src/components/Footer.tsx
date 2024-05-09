@@ -21,7 +21,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
-    <footer className=" py-4  dark-bg">
+    <footer className=" py-20  bg-[#0E0F12]">
 
       <MaxWidthWrapper className='w-11/12'>
 
@@ -38,7 +38,7 @@ const Footer = () => {
               />
             </span>
             <p className="text-white  py-4">Be the first to get updates from us</p>
-            <form action="" className="h-fit md:w-[60%] w-full  relative z-30 px-2 py-2 outline-1 outline outline-gray-600 bg-[#0E0F12] text-white flex rounded-xl md:rounded-2xl overflow-hidden  ">
+            <form action="" className="h-fit lg:w-[50%] w-full  max-w-[480px] relative z-5 px-2 py-2 outline-1 outline outline-gray-600 bg-[#0E0F12] text-white flex rounded-xl md:rounded-2xl overflow-hidden  ">
 
               <input type="email" className="bg-[#101114] text-lg px-2 md:px-5 md:flex-grow w-full caret-nocosLemon-300 focus:outline-none active:border-none placeholder:text-modalGrey-200  " placeholder="Email" />
               <Button variant={"formBtn"} className="h-[37px] md:h-[45px] "> Subscribe</Button>

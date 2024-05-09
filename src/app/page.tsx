@@ -1,7 +1,7 @@
 "use client";
 import Contributors from "@/components/Contributors";
 import ExpectionSection from "@/components/ExpectionSection";
-
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProjectSection from "@/components/ProjectSection";
 import { useEffect } from "react";
@@ -24,6 +24,7 @@ export default function Home() {
   // };
   return (
     <>
+      <Header />
       <Hero />
       <ProjectSection />
       <Contributors />
